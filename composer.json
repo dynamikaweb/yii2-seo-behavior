@@ -33,7 +33,7 @@
     "prefer-stable": false,
     "autoload": {
         "psr-4": {
-            "dynamikaweb\\seo": "src"
+            "dynamikaweb\\seo\\": "src"
         }
     }
 }
