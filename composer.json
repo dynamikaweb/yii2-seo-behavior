@@ -1,11 +1,12 @@
 {
-    "name": "dynamikaweb/yii2-templlate",
-    "description": "",
+    "name": "dynamikaweb/yii2-seo-behavior",
+    "description": "Easy and quick seo tool.",
     "type": "yii2-extension",
     "keywords": [
         "dynamika",
         "yii",
         "yii2",
+        "seo"
     ],
     "license": "BSD-3-Clause",
     "authors": [
@@ -21,18 +22,18 @@
         }
     ],
     "support": {
-        "issues": "http://github.com/dynamikaweb/yii2-template/issues",
-        "source": "http://github.com/dynamikaweb/yii2-template"
+        "issues": "http://github.com/dynamikaweb/yii2-seo-behavior/issues",
+        "source": "http://github.com/dynamikaweb/yii2-seo-behavior"
     },
     "require": {
         "php": ">=7.4.0",
-        "yiisoft/yii2": "*",
+        "yiisoft/yii2": "*"
     },
     "minimum-stability": "dev",
     "prefer-stable": false,
     "autoload": {
         "psr-4": {
-            "dynamikaweb\\": "src"
+            "dynamikaweb\\seo": "src"
         }
     }
 }
