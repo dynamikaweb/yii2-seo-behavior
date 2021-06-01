@@ -46,7 +46,7 @@ class SeoHelper
      * Register metags
      *
      * @param object $view
-     * @return void
+     * @return string
      */
     public static function register($view)
     {
