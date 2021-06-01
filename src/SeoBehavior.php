@@ -31,7 +31,7 @@ class SeoBehavior extends \yii\behaviors\AttributeBehavior
         $metatags = [];
 
         foreach($this->metatags as $tag => $attribute) {
-            if ($this->owner->canGetProperty($attribute)) {
+            if ($this->owner && $this->owner->canGetProperty($attribute)) {
                 $metatags[$tag] = $this->owner->{$attribute};
             }
         }
