@@ -50,12 +50,12 @@ class SeoHelper
      */
     public static function register($view)
     {
-        $image = self::$image;
+        $image = \yii\helpers\Url::base(true) . self::$image;
         $site_name = self::$site_name;
         $description = self::$description;
         $keywords = self::generateKeyWords(self::$keywords);
         $title = empty(self::$title)? self::$site_name: self::$title.' | '.self::$site_name;
-        $abstract = strlen(self::$description) >= 97? substr(self::$description, 0, 93).'...': self::$description;
+        $abstract = strlen(self::$description ?? '') >= 97? substr(self::$description, 0, 93).'...': self::$description;
         
         $view->registerMetaTag(['name' => 'title', 'content' => $title]);
         $view->registerMetaTag(['name' => 'og:title', 'content' => $title]);
